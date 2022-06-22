@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteTask } from '../../tasks/slice';
+import { deleteTask } from '../slice';
 
 const TodoItem: React.FC<{ id: string; title: string }> = ({ id, title }) => {
 	const dispatch = useDispatch();
