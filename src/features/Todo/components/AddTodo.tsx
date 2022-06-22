@@ -8,7 +8,6 @@ const AddTodo = () => {
 	const onSubmit = (event: any) => {
 		event.preventDefault();
 		if (value.trim().length === 0) {
-			alert('Enter a task before adding !!');
 			setValue('');
 			return;
 		}
@@ -31,7 +30,11 @@ const AddTodo = () => {
 					onChange={(event) => setValue(event.target.value)}
 				></input>
 
-				<button className="task-button" type="submit" disabled={!value}>
+				<button
+					className="task-button"
+					type="submit"
+					disabled={!value.trim()}
+				>
 					Save
 				</button>
 			</form>
