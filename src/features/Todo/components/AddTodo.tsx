@@ -7,10 +7,6 @@ const AddTodo = () => {
 	const dispatch = useDispatch();
 	const onSubmit = (event: any) => {
 		event.preventDefault();
-		if (value.trim().length === 0) {
-			setValue('');
-			return;
-		}
 		dispatch(
 			addTask({
 				name: value,
