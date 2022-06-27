@@ -5,7 +5,7 @@ import { addTask } from '../slice';
 const AddTodo = () => {
 	const [value, setValue] = useState('');
 	const dispatch = useDispatch();
-	const onSubmit = (event: any) => {
+	const onSubmit = (event: React.FormEvent) => {
 		event.preventDefault();
 		dispatch(
 			addTask({
