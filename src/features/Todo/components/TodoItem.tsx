@@ -16,14 +16,7 @@ const TodoItem: React.FC<{ id: string; title: string }> = ({ id, title }) => {
 		<li className="task-item">
 			<div className="task-item-text">{title}</div>
 			<div>
-				<button
-					className="remove-task-button"
-					onClick={() => {
-						removeTask();
-					}}
-				>
-					Delete
-				</button>
+				<button className="remove-task-button">Delete</button>
 			</div>
 		</li>
 	);
